@@ -1,0 +1,45 @@
+body{
+    background-color: #1F2227;
+  }
+  h1, p{
+    text-align: center;
+    color: #fff;
+  }
+  img{
+    margin: auto;
+    border-radius: 10px;
+    height: 300px;
+  }
+#lampadas{
+    display:grid;
+    grid-template-columns: repeat(3,auto);
+}  
+.lampada{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin-top:20px;
+}
+.btnGroup{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+}
+.btngroup button{
+  cursor:pointer;
+  padding: 5px 10px;
+  border:none;
+  border-radius:3px;
+  color:white;
+}
+#ligar{
+    background-color: #3e723d;
+}
+#desligar{
+    background-color: #a84756;
+}
+.ligada{
+  box-shadow: 0 0 5px white;
+}
