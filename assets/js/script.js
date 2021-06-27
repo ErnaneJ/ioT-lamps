@@ -1,6 +1,3 @@
-const luzLigada = 'Lon.png';
-const luzDesligada = 'Loff.png'
-
 const lampadas = document.querySelector('#lampadas');
 
 function toggle(id){
