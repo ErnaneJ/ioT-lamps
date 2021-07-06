@@ -13,6 +13,16 @@ function off(id){
   const luz = document.querySelector(`#luz${id}`);
   luz.classList.remove("on");
 }
+function sendAPI(state){
+  const http = new XMLHTTPRequest(state);
+  http.open("GET", `https://api.thingspeak.com/update?api_key=WBBE3WYXUWDA6OZJ&field1=0${state}`)
+  http.send();
+  http.onload = console.log(`${http.responseText} ${state}`);
+}
+
+function random(min, max){
+  return Math.floor(Math.random()*(max-min+1))+min;
+}
 
 function addLamps(){
 	for(let i=0; i<6;i++){
