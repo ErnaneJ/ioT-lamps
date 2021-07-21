@@ -16,6 +16,7 @@
       <source src="./assets/audios/interruptor.mp3" type="audio/mpeg">
     </audio>
   </div>
+ 
   <div class="menu" onclick="opOn()">
     <div></div>
     <div></div>
@@ -31,19 +32,35 @@
         </div>
       </div>
       <hr>
-      <a href="./pages/dashboard/dashboard.html"><li>Dashboard</li></a>
+      <a href="../../index.html"><li>Home</li></a>
     </ul>
   </div>
     <h1>
       Projeto IoT - 2021.1 | ECT/UFRN<br>
       <span>Aluno: Ernane Ferreira Rocha Junior - Turma: 01</span>
     </h1>
-    
     <p id="result">
-      Resultado | 1º unidade💡
+      Resultado | 2º unidade💡
     </p>
     <section id="lampadas">
-      
+      <div class="lampada">
+        <div class="bg" onclick="toggle(1)">
+          <div id="luz1"class="image"></div>
+        </div>
+        <div class="btngroup">
+            <button id="ligar" onclick="on(1)">Ligar</button>
+            <button id="desligar" onclick="off(1)">Desligar</button>
+            <button id="ocilar" class="parado" onclick="ocilar(1)">Ocilar</button>
+        </div>
+      </div>
+    </section>
+    <section class="iframe">
+      <iframe 
+        width="450" 
+        height="260"
+        src="https://thingspeak.com/channels/1436561/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15">
+      </iframe>
+      <div class="menssagem"></div>
     </section>
     <footer>Developed with ❤ by <a target="_blank" href="https://ernanej.github.io/my-linktree/">Ernane Ferreira</a>.</footer>
     <script src="./assets/js/script.js"></script>

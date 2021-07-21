@@ -1,27 +1,25 @@
+let audio = document.querySelector('.audio audio')
+function opOn(){
+  const op = document.querySelector(".opcoes")
+  op.classList.toggle('opOn')
+}
 const lampadas = document.querySelector('#lampadas');
 
 function toggle(id){
   const luz = document.querySelector(`#luz${id}`);
   luz.classList.toggle("on");
+  audio.play();
 }
 
 function on(id){
   const luz = document.querySelector(`#luz${id}`);
   luz.classList.add("on");
+  audio.play();
 }
 function off(id){
   const luz = document.querySelector(`#luz${id}`);
   luz.classList.remove("on");
-}
-function sendAPI(state){
-  const http = new XMLHTTPRequest(state);
-  http.open("GET", `https://api.thingspeak.com/update?api_key=WBBE3WYXUWDA6OZJ&field1=0${state}`)
-  http.send();
-  http.onload = console.log(`${http.responseText} ${state}`);
-}
-
-function random(min, max){
-  return Math.floor(Math.random()*(max-min+1))+min;
+  audio.play();
 }
 
 function addLamps(){
