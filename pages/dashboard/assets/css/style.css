@@ -144,7 +144,9 @@ height: 300px;
 .iframe iframe{
   border-radius:20px;
   width:450; 
+  max-width: 95vw;
 }
+
 
 footer{
   position: absolute;
@@ -170,5 +172,9 @@ footer a:hover{
     margin: 20px 0;
     bottom:0px;
     left:0;
-  }  
+  } 
+  .menu{
+    top:15px;
+    right: 25px;
+  }
 }

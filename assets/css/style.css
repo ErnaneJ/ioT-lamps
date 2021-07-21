@@ -23,7 +23,7 @@ body{
   color:white;
   position:absolute;
   top:0px;
-  right: -280px;
+  right: -100vw;
   width:280px;
   max-width: 100vw;
   height:100vh;
@@ -162,4 +162,8 @@ footer a:hover{
     bottom:0px;
     left:0;
   }  
+  .menu{
+    top:15px;
+    right: 25px;
+  }
 }
