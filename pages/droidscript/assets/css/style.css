@@ -23,7 +23,7 @@ body{
   color:white;
   position:absolute;
   top:0px;
-  right: -100vw;
+  right: -280px;
   width:280px;
   max-width: 100vw;
   height:100vh;
@@ -72,34 +72,29 @@ body{
 #d2{
   transform:rotate(48deg) translateX(-8px);
 }
-
 h1, p{
-  text-align: center;
-  color: #fff;
-  margin: 5px 0;
+text-align: center;
+color: #fff;
+margin:5px 0;
 }
 h1 span{font-size:14px; font-weight: 400;}
 img{
-  margin: auto;
-  border-radius: 10px;
-  height: 300px;
-}
-#lampadas{
-    display:grid;
-    grid-template-columns: repeat(3,auto);
-}  
+margin: auto;
+border-radius: 10px;
+height: 300px;
+} 
 .lampada{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    margin-top:20px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  margin-top:20px;
 }
 .btnGroup{
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:center;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:center;
 }
 .btngroup button{
   cursor:pointer;
@@ -109,10 +104,13 @@ img{
   color:white;
 }
 #ligar{
-    background-color: #3e723d;
+  background-color: #3e723d;
 }
 #desligar{
-    background-color: #a84756;
+  background-color: #a84756;
+}
+#ocilar{
+  background-color: #94ad05;
 }
 .bg{
   background-color: white;
@@ -135,6 +133,21 @@ img{
   transform:translateX(-8px);
 }
 
+/* iframe */
+.iframe{
+  margin: 20px 0 0 0;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+}
+.iframe iframe{
+  border-radius:20px;
+  width:450; 
+  max-width: 95vw;
+}
+
 footer{
   position: absolute;
   width: 100%;
@@ -153,16 +166,46 @@ footer a:hover{
   text-decoration: underline; 
   opacity: .8;
 }
+
+.menssagem{
+  color: rgb(204, 204, 204);
+  text-align: center;
+  margin-top: 10px;
+  font-size:14px;
+  width: 100%;
+  max-width: 700px;
+}
+
+.btn-group {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.btn-group a{
+  transition: .3s;
+  padding: 10px 20px;
+  margin:5px;
+  text-decoration: none;
+  color:white;
+  background-color:rgb(97, 97, 97);
+  border-radius: 5px;
+}
+.btn-group a:hover{
+  transition: .3s;
+  background-color:rgb(61, 61, 61);
+}
+.btn-group i{
+  margin-right: 10px;
+}
 @media (max-width: 635px){
-  #lampadas{
-    grid-template-columns: repeat(1,auto);
-  }
   footer{
     position: relative;
     margin: 20px 0;
     bottom:0px;
     left:0;
-  }  
+  } 
   .menu{
     top:15px;
     right: 25px;

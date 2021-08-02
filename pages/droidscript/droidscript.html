@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ernane Ferreira">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" type="imagem/png" href="/./assets/images/Lon.png" />
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>IoT ECT - UFRN | Droidscript</title>
+</head>
+<body>
+  <div class="audio" style="display:none;">
+    <audio controls>
+      <source src="./assets/audios/interruptor.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+ 
+  <div class="menu" onclick="opOn()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div class="opcoes">
+    <ul>
+      <div class="top">
+        <p>Menu</p>
+        <div class="fechar" onclick="opOn()">
+          <div id="d1"></div>
+          <div id="d2"></div>
+        </div>
+      </div>
+      <hr>
+      <a href="../../index.html"><li>Home</li></a>
+      <a href="../dashboard/dashboard.html"><li>Dashboard</li></a>
+    </ul>
+  </div>
+    <h1>
+      Projeto IoT - 2021.1 ECT/UFRN<br>
+      <span>Aluno: Ernane Ferreira Rocha Junior - Turma: 01</span>
+    </h1>
+    <p id="result">
+      Resultado | Droidscript💡
+    </p>
+    <section id="lampadas">
+      <div class="lampada">
+        <div class="bg">
+          <div id="luz1"class="image"></div>
+        </div>
+      </div>
+    </section>
+    <section class="iframe">
+      <iframe 
+      width="450" 
+      height="260" 
+      style="border: 1px solid #cccccc;" 
+      src="https://thingspeak.com/channels/1457178/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=1">
+    </iframe>
+      <div class="menssagem">
+        ⚠️<br/>
+        Esta página não funciona individualmente como as outras. 
+        O seu intuito é que, ao utilizar um sensor de luz, sejam enviados 
+        dados para a API do <a style="color:white" href="https://thingspeak.com/channels/1436561">Thingspeak</a>. 
+        Após isso, o mesmo nos fornece esses valores enviados pelo dispositivo e 
+        nos disponibiliza o seu consumo em formato json. A cada 3s é feita uma requisição a 
+        API do thingspeak para obter os dados necessários e, com isso, a lâmpada decide: caso haja 
+        iluminação, ela fica desligada; caso não haja, ela acende automaticamente. O objetivo é simular 
+        um sistema de iluminação automática.
+</div>
+    </section>
+    <div class="btn-group">
+      <a href="./assets/codigoDroidscript/codigoDroidscript.js"><i class="fas fa-eye"></i>Ver codigo Droidscript</a>
+      <a href="./assets/codigoDroidscript/codigoDroidscript.js" download><i class="fas fa-download"></i>Download codigo Droidscript</a>
+    </div>
+    <footer>Developed with ❤ by <a target="_blank" href="https://ernanej.github.io/my-linktree/">Ernane Ferreira</a>.</footer>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
